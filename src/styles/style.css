@@ -1,0 +1,104 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a1929;
+}
+
+.bg-dark {
+  background-color: #0a1929 !important;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.dark-field {
+  background-color: #0a1929 !important;
+  border: 1px solid #132f4c;
+}
+
+.dark-field:hover {
+  background: rgba(19, 47, 76, 0.4);
+  border-color: #173a5e;
+}
+
+.dark-field:focus {
+  border-color: #132f4c;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem #132f4c;
+          box-shadow: 0 0 0 0.25rem #132f4c;
+}
+
+.light-field {
+  background-color: #f3f6f9 !important;
+  border: 1px solid #e7ebf0;
+}
+
+.light-field:hover {
+  background: rgba(19, 47, 76, 0.4);
+  border-color: #173a5e;
+}
+
+.light-field:focus {
+  border-color: #132f4c;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.05rem #132f4c;
+          box-shadow: 0 0 0 0.05rem #132f4c;
+}
+
+.card.bg-dark {
+  background-color: #001e3c !important;
+  border: 1px solid #132f4c;
+  height: 150px;
+}
+
+.card.bg-light {
+  background-color: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 150px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  text-decoration: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.list-group-item.active {
+  border: none;
+  border-bottom: 1px solid #132f4c;
+}
+
+.list-group-item.active:hover {
+  background-color: #132f4c !important;
+}
+
+thead,
+table > :not(caption) > * > * {
+  border-width: 0;
+}
+
+.table.table-dark {
+  border: 1.3px solid #132f4c;
+  border-radius: 2rem !important;
+}
+
+.table.table-dark td,
+.table.table-dark th {
+  background-color: #0a1929 !important;
+  border-color: #001e3c;
+}
+
+.table.table-hover > tbody > tr:hover > * {
+  background-color: #e7ebf0 !important;
+}
+
+.table-dark.table-hover > tbody > tr:hover > * {
+  background-color: #001e3c !important;
+}
+/*# sourceMappingURL=style.css.map */

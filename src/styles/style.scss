@@ -1,0 +1,110 @@
+$background: rgb(10, 25, 41);
+$primaryColor: rgb(0, 30, 60);
+$secondaryColor: rgb(19, 47, 76);
+
+$lightBackground: white;
+$lightPrimaryColor: rgb(243, 246, 249);
+$lightSecondaryColor: #e7ebf0;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: $background;
+}
+
+.bg-dark {
+  background-color: $background !important;
+}
+.bg-light {
+  background-color: $lightBackground !important;
+}
+//input field
+.dark-field {
+  background-color: $background !important;
+  border: 1px solid $secondaryColor;
+  &:hover {
+    background: rgba(19, 47, 76, 0.4);
+    border-color: rgb(23, 58, 94);
+  }
+  &:focus {
+    border-color: $secondaryColor;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem $secondaryColor;
+  }
+}
+
+.light-field {
+  background-color: $lightPrimaryColor !important;
+  border: 1px solid $lightSecondaryColor;
+  &:hover {
+    background: rgba(19, 47, 76, 0.4);
+    border-color: rgb(23, 58, 94);
+  }
+  &:focus {
+    border-color: $secondaryColor;
+    outline: 0;
+    box-shadow: 0 0 0 0.05rem $secondaryColor;
+  }
+}
+
+//card - dark theme
+
+.card.bg-dark {
+  background-color: $primaryColor !important;
+  border: 1px solid $secondaryColor;
+  height: 150px;
+}
+
+//card - light theme
+
+.card.bg-light {
+  background-color: $lightBackground !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 150px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  text-decoration: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// list items
+
+.list-group-item.active {
+  border: none;
+  border-bottom: 1px solid $secondaryColor;
+  &:hover {
+    background-color: $secondaryColor !important;
+  }
+}
+
+// table
+
+thead,
+table > :not(caption) > * > * {
+  border-width: 0;
+}
+
+//table-dark
+
+.table.table-dark {
+  border: 1.3px solid $secondaryColor;
+  border-radius: 2rem !important;
+  td,
+  th {
+    background-color: $background !important;
+    border-color: $primaryColor;
+  }
+}
+// light table
+.table.table-hover > tbody > tr:hover > * {
+  background-color: $lightSecondaryColor !important;
+}
+.table-dark.table-hover > tbody > tr:hover > * {
+  background-color: $primaryColor !important;
+}
