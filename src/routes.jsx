@@ -9,7 +9,7 @@ const Loadable = (Component) => (props) =>
 
 const HomePage = Loadable(lazy(() => import("./pages/HomePage")));
 const CountryPage = Loadable(lazy(() => import("./pages/CountryPage")));
-const AboutPage = Loadable(lazy(() => import("./pages/AboutPage")));
+
 
 const routes = [
   {
@@ -20,10 +20,7 @@ const routes = [
     path: ":id",
     element: <CountryPage />,
   },
-  {
-    path: "about",
-    element: <AboutPage />,
-  },
+  
 ];
 
 export default routes;
